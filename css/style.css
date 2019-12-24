@@ -1,0 +1,18 @@
+body {
+  background-image: url("imgs/logo.png");
+  background-repeat: repeat-y repeat-x;
+  background-size: 100px 100px;
+}
+
+img {
+
+  display: block;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  height: 100%;
+
+}
+
