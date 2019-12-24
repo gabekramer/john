@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<center>
+    <a id="myAnchor" height="100%" />
+</center>
+
+<script type="text/JavaScript">
+    var i = 1;
+    function show () {
+      var myAnchor = document.getElementById("myAnchor");
+      var myImg = document.createElement("img");
+      myImg.src = "imgs/john"+i+".png";
+      i++;
+      myImg.id = "myAnchor";
+      myAnchor.parentNode.replaceChild(myImg, myAnchor);
+      if (i>17) {
+        //clearInterval(control); console.log("KILLING");
+	i = 1;
+      }
+    };
+  show();
+  control = setInterval(show, 5000);
+</script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
